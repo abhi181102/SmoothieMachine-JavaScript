@@ -64,55 +64,101 @@
         <option value="extra-sweet">Extra Sweet</option></select
       ><br /><br />
 
-      <label>Choose extra ingredients:</label><br />
-      <input type="checkbox" id="protein" name="extras" value="protein" />
-      <label for="protein">Protein Powder</label><br />
-
-      <input type="checkbox" id="chia" name="extras" value="chia" />
-      <label for="chia">Chia Seeds</label><br />
-
-      <input type="checkbox" id="ice-cube" name="extras" value="ice-cube" />
-      <label for="ice-cube">Ice Cube</label><br />
-
-      <input type="checkbox" id="yoghurt" name="extras" value="yoghurt" />
-      <label for="yoghurt">2 tbsp Yoghurt</label><br />
-
-      <input type="checkbox" id="sugar" name="extras" value="sugar" />
-      <label for="sugar">1½ tbsp Sugar</label><br />
-
-      <input type="checkbox" id="cornflakes" name="extras" value="cornflakes" />
-      <label for="cornflakes">1½ tbsp Cornflakes</label><br />
-
-      <input
-        type="checkbox"
-        id="almond-milk"
-        name="extras"
-        value="almond-milk"
-      />
-      <label for="almond-milk">Almond Milk</label><br />
-
-      <input type="checkbox" id="spirulina" name="extras" value="spirulina" />
-      <label for="spirulina">Spirulina</label><br /><br />
-
-      <label>Dietary Preferences:</label><br />
-      <input type="radio" id="vegan" name="diet" value="vegan" />
-      <label for="vegan">Vegan</label><br />
-
-      <input type="radio" id="gluten-free" name="diet" value="gluten-free" />
-      <label for="gluten-free">Gluten-Free</label><br />
-
-      <input type="radio" id="keto" name="diet" value="keto" />
-      <label for="keto">Keto</label><br />
-
-      <input
-        type="radio"
-        id="no-preference"
-        name="diet"
-        value="no-preference"
-        checked
-      />
-      <label for="no-preference">No Preference</label><br /><br />
-
+      <label>Choose extra ingredients:</label>
+      <div class="checkbox-grid">
+        <div>
+          <input
+            type="checkbox"
+            id="protein"
+            name="extras"
+            value="protein"
+          /><label for="protein">Protein Powder</label>
+        </div>
+        <div>
+          <input type="checkbox" id="chia" name="extras" value="chia" /><label
+            for="chia"
+            >Chia Seeds</label
+          >
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            id="ice-cube"
+            name="extras"
+            value="ice-cube"
+          /><label for="ice-cube">Ice Cube</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            id="yoghurt"
+            name="extras"
+            value="yoghurt"
+          /><label for="yoghurt">2 tbsp Yoghurt</label>
+        </div>
+        <div>
+          <input type="checkbox" id="sugar" name="extras" value="sugar" /><label
+            for="sugar"
+            >1½ tbsp Sugar</label
+          >
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            id="cornflakes"
+            name="extras"
+            value="cornflakes"
+          /><label for="cornflakes">1½ tbsp Cornflakes</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            id="almond-milk"
+            name="extras"
+            value="almond-milk"
+          /><label for="almond-milk">Almond Milk</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            id="spirulina"
+            name="extras"
+            value="spirulina"
+          /><label for="spirulina">Spirulina</label>
+        </div>
+      </div>
+      <label>Dietary Preferences:</label>
+      <div class="radio-grid">
+        <div>
+          <input type="radio" id="vegan" name="diet" value="vegan" /><label
+            for="vegan"
+            >Vegan</label
+          >
+        </div>
+        <div>
+          <input
+            type="radio"
+            id="gluten-free"
+            name="diet"
+            value="gluten-free"
+          /><label for="gluten-free">Gluten-Free</label>
+        </div>
+        <div>
+          <input type="radio" id="keto" name="diet" value="keto" /><label
+            for="keto"
+            >Keto</label
+          >
+        </div>
+        <div>
+          <input
+            type="radio"
+            id="no-preference"
+            name="diet"
+            value="no-preference"
+            checked
+          /><label for="no-preference">No Preference</label>
+        </div>
+      </div>
       <label for="quantity">Quantity:</label><br />
       <input
         type="number"
