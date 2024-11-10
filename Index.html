@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Your Smoothie</title>
+  </head>
+  <body>
+    <h1>Like SmoothiWala</h1>
+    <h2>Build Your Perfect Smoothie</h2>
+    <form action="/submit-order" method="POST">
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" required /><br /><br />
+
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <label for="size">Choose a size:</label><br />
+      <select id="size" name="size" required>
+        <option value="small">Small (12 oz)</option>
+        <option value="medium">Medium (16 oz)</option>
+        <option value="large">Large (20 oz)</option>
+        <option value="jumbo">Jumbo (24 oz)</option></select
+      ><br /><br />
+
+      <label for="flavor">Choose a flavor:</label><br />
+      <select id="flavor" name="flavor" required>
+        <option value="strawberry">Strawberry</option>
+        <option value="mango">Mango</option>
+        <option value="banana">Banana</option>
+        <option value="blueberry">Blueberry</option>
+        <option value="pomegranate-chia">
+          Pomegranate & Chia Seed Smoothie
+        </option>
+        <option value="kiwi">Kiwi Smoothie</option>
+        <option value="dragon-fruit-yoghurt">
+          Dragon Fruit & Yoghurt Smoothie
+        </option>
+        <option value="chai-banana">Chai-Spiced Banana Smoothie</option>
+        <option value="spiced-watermelon">Spiced Watermelon Smoothie</option>
+        <option value="mango-lassi">Mango Lassi</option>
+        <option value="date">Date Smoothie</option></select
+      ><br /><br />
+
+      <label for="base">Choose a base liquid:</label><br />
+      <select id="base" name="base" required>
+        <option value="water">Water</option>
+        <option value="almond-milk">Almond Milk</option>
+        <option value="coconut-water">Coconut Water</option>
+        <option value="oat-milk">Oat Milk</option>
+        <option value="whole-milk">Whole Milk</option>
+        <option value="soy-milk">Soy Milk</option>
+        <option value="orange-juice">Orange Juice</option></select
+      ><br /><br />
+
+      <label for="sweetness">Choose your sweetness level:</label><br />
+      <select id="sweetness" name="sweetness">
+        <option value="unsweetened">Unsweetened</option>
+        <option value="light">Lightly Sweetened</option>
+        <option value="normal">Normal</option>
+        <option value="extra-sweet">Extra Sweet</option></select
+      ><br /><br />
+
+      <label>Choose extra ingredients:</label><br />
+      <input type="checkbox" id="protein" name="extras" value="protein" />
+      <label for="protein">Protein Powder</label><br />
+
+      <input type="checkbox" id="chia" name="extras" value="chia" />
+      <label for="chia">Chia Seeds</label><br />
+
+      <input type="checkbox" id="ice-cube" name="extras" value="ice-cube" />
+      <label for="ice-cube">Ice Cube</label><br />
+
+      <input type="checkbox" id="yoghurt" name="extras" value="yoghurt" />
+      <label for="yoghurt">2 tbsp Yoghurt</label><br />
+
+      <input type="checkbox" id="sugar" name="extras" value="sugar" />
+      <label for="sugar">1½ tbsp Sugar</label><br />
+
+      <input type="checkbox" id="cornflakes" name="extras" value="cornflakes" />
+      <label for="cornflakes">1½ tbsp Cornflakes</label><br />
+
+      <input
+        type="checkbox"
+        id="almond-milk"
+        name="extras"
+        value="almond-milk"
+      />
+      <label for="almond-milk">Almond Milk</label><br />
+
+      <input type="checkbox" id="spirulina" name="extras" value="spirulina" />
+      <label for="spirulina">Spirulina</label><br /><br />
+
+      <label>Dietary Preferences:</label><br />
+      <input type="radio" id="vegan" name="diet" value="vegan" />
+      <label for="vegan">Vegan</label><br />
+
+      <input type="radio" id="gluten-free" name="diet" value="gluten-free" />
+      <label for="gluten-free">Gluten-Free</label><br />
+
+      <input type="radio" id="keto" name="diet" value="keto" />
+      <label for="keto">Keto</label><br />
+
+      <input
+        type="radio"
+        id="no-preference"
+        name="diet"
+        value="no-preference"
+        checked
+      />
+      <label for="no-preference">No Preference</label><br /><br />
+
+      <label for="quantity">Quantity:</label><br />
+      <input
+        type="number"
+        id="quantity"
+        name="quantity"
+        min="1"
+        value="1"
+        required
+      /><br /><br />
+
+      <label for="instructions">Special Instructions:</label><br />
+      <textarea
+        id="instructions"
+        name="instructions"
+        rows="3"
+        placeholder="Any special requests (e.g., 'less ice', 'extra thick')"
+      ></textarea
+      ><br /><br />
+
+      <button type="submit">Place Order</button>
+    </form>
+  </body>
+</html>
