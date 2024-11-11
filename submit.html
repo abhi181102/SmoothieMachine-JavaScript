@@ -2,29 +2,46 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!-- Character encoding for the document -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Responsive design for mobile devices -->
     <title>Order Receipt</title>
+    <!-- Title of the webpage -->
     <link rel="stylesheet" href="./submit.css" />
+    <!-- Link to external CSS for styling the receipt -->
   </head>
   <body>
     <div class="receipt">
+      <!-- Main container for the receipt -->
       <h1>Order Receipt</h1>
+      <!-- Main heading for the receipt -->
+
       <div class="receipt-section">
+        <!-- Section for customer information -->
         <p><strong>Name:</strong> <span id="summaryName"></span></p>
+        <!-- Placeholder for customer's name -->
         <p><strong>Email:</strong> <span id="summaryEmail"></span></p>
+        <!-- Placeholder for customer's email -->
       </div>
 
       <div class="receipt-section">
+        <!-- Section for order details -->
         <h2>Order Details</h2>
+        <!-- Subheading for order details -->
         <p><strong>Quantity:</strong> <span id="summaryQuantity"></span></p>
+        <!-- Placeholder for quantity ordered -->
         <p><strong>Extras:</strong> <span id="summaryExtras"></span></p>
+        <!-- Placeholder for any extra ingredients -->
       </div>
 
       <div class="receipt-total">
+        <!-- Section for total price -->
         <p>Total Price: $<span id="summaryPrice"></span></p>
+        <!-- Placeholder for total price of the order -->
       </div>
     </div>
 
     <script src="./submit.js"></script>
+    <!-- Link to external JavaScript for functionality, such as populating the receipt -->
   </body>
 </html>
