@@ -1,10 +1,11 @@
 class SmoothieOrder {
-  constructor(name, email, quantity, extras) {
+  constructor(name, email, quantity, size, extras) {
     this.name = name;
     this.email = email;
     this.quantity = quantity;
+    this.size = size;
     this.extras = extras;
-    this.basePrice = 5.0;
+    this.basePrice = parseFloat(size.price);
   }
 
   // Method to calculate the total price based on quantity and extras
@@ -26,6 +27,7 @@ class SmoothieOrder {
       name: this.name,
       email: this.email,
       quantity: this.quantity,
+      size: this.size.name,
       extras: this.extras.map((extra) => extra.name),
       totalPrice: this.calculateTotalPrice(),
     };
@@ -42,6 +44,15 @@ function handleOrder(event) {
   const email = document.getElementById("email").value;
   const quantity = parseInt(document.getElementById("quantity").value);
 
+  // Get selected size and its price
+  const sizeSelect = document.getElementById("size");
+  const size = {
+    name: sizeSelect.options[sizeSelect.selectedIndex].text,
+    price: parseFloat(
+      sizeSelect.options[sizeSelect.selectedIndex].dataset.price
+    ),
+  };
+
   // Get selected extras
   const extras = [];
   document
@@ -54,7 +65,7 @@ function handleOrder(event) {
     });
 
   // Create a new SmoothieOrder instance
-  const smoothieOrder = new SmoothieOrder(name, email, quantity, extras);
+  const smoothieOrder = new SmoothieOrder(name, email, quantity, size, extras);
 
   // Save the order and redirect to the summary page
   smoothieOrder.saveOrder();
