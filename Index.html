@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-
     <title>Order Your Smoothie</title>
   </head>
   <body>
@@ -21,10 +20,12 @@
 
       <label for="size">Choose a size:</label><br />
       <select id="size" name="size" required>
-        <option value="small">Small (12 oz)</option>
-        <option value="medium">Medium (16 oz)</option>
-        <option value="large">Large (20 oz)</option>
-        <option value="jumbo">Jumbo (24 oz)</option></select
+        <option value="small" data-price="4.00">Small (12 oz) - $4.00</option>
+        <option value="medium" data-price="5.50">Medium (16 oz) - $5.50</option>
+        <option value="large" data-price="6.50">Large (20 oz) - $6.50</option>
+        <option value="jumbo" data-price="8.00">
+          Jumbo (24 oz) - $8.00
+        </option></select
       ><br /><br />
 
       <label for="flavor">Choose a flavor:</label><br />
@@ -68,66 +69,79 @@
             type="checkbox"
             id="protein"
             name="extras"
-            value="protein"
-          /><label for="protein">Protein Powder</label>
+            value="Protein Powder"
+            data-price="1.00"
+          /><label for="protein">Protein Powder - $1.00</label>
         </div>
         <div>
-          <input type="checkbox" id="chia" name="extras" value="chia" /><label
-            for="chia"
-            >Chia Seeds</label
-          >
+          <input
+            type="checkbox"
+            id="chia"
+            name="extras"
+            value="Chia Seeds"
+            data-price="0.50"
+          /><label for="chia">Chia Seeds - $0.50</label>
         </div>
         <div>
           <input
             type="checkbox"
             id="ice-cube"
             name="extras"
-            value="ice-cube"
-          /><label for="ice-cube">Ice Cube</label>
+            value="Ice Cube"
+            data-price="0.20"
+          /><label for="ice-cube">Ice Cube - $0.20</label>
         </div>
         <div>
           <input
             type="checkbox"
             id="yoghurt"
             name="extras"
-            value="yoghurt"
-          /><label for="yoghurt">2 tbsp Yoghurt</label>
+            value="2 tbsp Yoghurt"
+            data-price="0.50"
+          /><label for="yoghurt">2 tbsp Yoghurt - $0.50</label>
         </div>
         <div>
-          <input type="checkbox" id="sugar" name="extras" value="sugar" /><label
-            for="sugar"
-            >1½ tbsp Sugar</label
-          >
+          <input
+            type="checkbox"
+            id="sugar"
+            name="extras"
+            value="1½ tbsp Sugar"
+            data-price="0.30"
+          /><label for="sugar">1½ tbsp Sugar - $0.30</label>
         </div>
         <div>
           <input
             type="checkbox"
             id="cornflakes"
             name="extras"
-            value="cornflakes"
-          /><label for="cornflakes">1½ tbsp Cornflakes</label>
+            value="1½ tbsp Cornflakes"
+            data-price="0.40"
+          /><label for="cornflakes">1½ tbsp Cornflakes - $0.40</label>
         </div>
         <div>
           <input
             type="checkbox"
             id="almond-milk"
             name="extras"
-            value="almond-milk"
-          /><label for="almond-milk">Almond Milk</label>
+            value="Almond Milk"
+            data-price="0.60"
+          /><label for="almond-milk">Almond Milk - $0.60</label>
         </div>
         <div>
           <input
             type="checkbox"
             id="spirulina"
             name="extras"
-            value="spirulina"
-          /><label for="spirulina">Spirulina</label>
+            value="Spirulina"
+            data-price="0.70"
+          /><label for="spirulina">Spirulina - $0.70</label>
         </div>
       </div>
+
       <label>Dietary Preferences:</label>
       <div class="radio-grid">
         <div>
-          <input type="radio" id="vegan" name="diet" value="vegan" /><label
+          <input type="radio" id="vegan" name="diet" value="Vegan" /><label
             for="vegan"
             >Vegan</label
           >
@@ -137,11 +151,11 @@
             type="radio"
             id="gluten-free"
             name="diet"
-            value="gluten-free"
+            value="Gluten-Free"
           /><label for="gluten-free">Gluten-Free</label>
         </div>
         <div>
-          <input type="radio" id="keto" name="diet" value="keto" /><label
+          <input type="radio" id="keto" name="diet" value="Keto" /><label
             for="keto"
             >Keto</label
           >
@@ -151,11 +165,12 @@
             type="radio"
             id="no-preference"
             name="diet"
-            value="no-preference"
+            value="No Preference"
             checked
           /><label for="no-preference">No Preference</label>
         </div>
       </div>
+
       <label for="quantity">Quantity:</label><br />
       <input
         type="number"

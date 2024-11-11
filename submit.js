@@ -14,6 +14,6 @@ if (orderSummary) {
     orderSummary.totalPrice.toFixed(2);
 } else {
   // If no order data exists, display a message or redirect the user
-  document.querySelector(".summary-box").innerHTML =
+  document.querySelector(".receipt").innerHTML =
     "<p>No order details found.</p>";
 }

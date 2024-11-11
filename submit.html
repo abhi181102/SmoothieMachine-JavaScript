@@ -3,18 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Order Summary</title>
+    <title>Order Receipt</title>
     <link rel="stylesheet" href="./submit.css" />
   </head>
   <body>
-    <div class="summary-box">
-      <h1>Order Summary</h1>
-      <p><strong>Name:</strong> <span id="summaryName"></span></p>
-      <p><strong>Email:</strong> <span id="summaryEmail"></span></p>
-      <p><strong>Quantity:</strong> <span id="summaryQuantity"></span></p>
-      <p><strong>Extras:</strong> <span id="summaryExtras"></span></p>
-      <p class="total-price">Total Price: $<span id="summaryPrice"></span></p>
+    <div class="receipt">
+      <h1>Order Receipt</h1>
+      <div class="receipt-section">
+        <p><strong>Name:</strong> <span id="summaryName"></span></p>
+        <p><strong>Email:</strong> <span id="summaryEmail"></span></p>
+      </div>
+
+      <div class="receipt-section">
+        <h2>Order Details</h2>
+        <p><strong>Quantity:</strong> <span id="summaryQuantity"></span></p>
+        <p><strong>Extras:</strong> <span id="summaryExtras"></span></p>
+      </div>
+
+      <div class="receipt-total">
+        <p>Total Price: $<span id="summaryPrice"></span></p>
+      </div>
     </div>
+
     <script src="./submit.js"></script>
   </body>
 </html>
