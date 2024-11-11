@@ -1,0 +1,40 @@
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f3f4f6;
+  margin: 0;
+}
+
+/* Summary Box Styling */
+.summary-box {
+  background-color: #ffffff;
+  padding: 20px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+.summary-box h1 {
+  font-size: 1.8em;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.summary-box p {
+  font-size: 1em;
+  color: #555555;
+  margin: 5px 0;
+}
+
+.summary-box .total-price {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #48a9e6;
+  margin-top: 15px;
+}

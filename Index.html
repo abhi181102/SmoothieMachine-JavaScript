@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <script src="./script.js"></script>
+
     <title>Order Your Smoothie</title>
   </head>
   <body>
@@ -12,7 +12,7 @@
       <h1>Like SmoothiWala</h1>
       <h2>Build Your Perfect Smoothie</h2>
     </div>
-    <form action="./submit.html" method="POST">
+    <form id="orderForm">
       <label for="name">Name:</label><br />
       <input type="text" id="name" name="name" required /><br /><br />
 
@@ -29,10 +29,6 @@
 
       <label for="flavor">Choose a flavor:</label><br />
       <select id="flavor" name="flavor" required>
-        <option value="strawberry">Strawberry</option>
-        <option value="mango">Mango</option>
-        <option value="banana">Banana</option>
-        <option value="blueberry">Blueberry</option>
         <option value="pomegranate-chia">
           Pomegranate & Chia Seed Smoothie
         </option>
@@ -181,5 +177,6 @@
 
       <button type="submit">Place Order</button>
     </form>
+    <script src="./script.js"></script>
   </body>
 </html>

@@ -58,7 +58,7 @@ function handleOrder(event) {
 
   // Save the order and redirect to the summary page
   smoothieOrder.saveOrder();
-  window.location.href = "summary.html";
+  window.location.href = "./submit.html";
 }
 
 // Attach the handleOrder function to the form
